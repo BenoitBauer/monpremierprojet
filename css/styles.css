@@ -17,3 +17,41 @@ table, th, td {
 textarea {
     resize: none;
 }
+
+h1 {
+    /* Color: la couleur du texte */
+    color: rgb(0, 0, 0);
+    /* Text-align: l'alignement du texte */
+    text-align: center;
+    /* Backgroung-color: couleur de fond */
+    background-color: green;
+    /* padding: c'est la marge interieur de l'element  */
+    padding: 10px;
+    /* text-decoration: c'est le soulugnage, le barrage etc texte  */
+    text-decoration: underline;
+}
+
+/* > permet de selectionner l'enfant direct de l'element */
+#liste_cours > li {
+    /* list-style : none permet la desactivation des puces */
+    list-style: none;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    border: solid 1px #92AC86;
+    width: fit-content;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #A7D49B;
+}
+
+#liste_cours > li > a {
+  text-decoration: none;
+  color: #5A1807;
+}
+
+#liste_cours > li :hover {
+     border: solid 1px #F39B6D;
+    background-color: #3E6990;
+
+}
