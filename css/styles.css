@@ -149,6 +149,7 @@ body {
 }
 
 .nav-bar-list > li > a {
+projets
     text-decoration: none;
     color: white;
 }
@@ -223,6 +224,7 @@ h5 ~ p {
 /* exercice */
 /* part I */
 
+            </ul>
 .box p {
     color: red;
 }
