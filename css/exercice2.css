@@ -1,460 +1,548 @@
-.main {
-    display: flex;
-    gap: 1rem;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    background-color:cyan
+:root{
+    --blue-ocean: #1f6feb;
+    --violet: #8b5cf6;
+    --cyan: #38bdf8;
+    --green-acid: #22c55e;
+    --yellow-dijon: #f59e0b;
+    --crimson: #ef4444;
+    --violet-pink: #ec4899;
 }
 
-.container-nav {
-    display: flex;
-    width: 100%;
-    height: 6%;
-    background-color: red;
+.blue-ocean {
+    background-color: var(--blue-ocean);
+}
 
+.violet {
+    background-color: var(--violet);
+}
+
+.cyan {
+    background-color: var(--cyan);
+}
+
+.green-acid {
+    background-color: var(--green-acid);
+}
+
+.yellow-dijon {
+    background-color: var(--yellow-dijon);
+}
+
+.crimson {
+    background-color: var(--crimson);
+}
+
+.violet-pink {
+    background-color: var(--violet-pink);
+}
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    gap: 0.5rem;
+}
+
+/* HEADER */
+
+header{
+    height: 5%;
+    width: 100%;<!DOCTYPE html>
+<html lang="en"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/exercice2.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="main">
+    <div class="container-nav">
+
+    </div>
+    <div class="conteneur-centre">
+        
+        <!-- Colonne gauche -->
+        <div class="col_gauche">
+            <div class="menu-top"></div>
+            <div class="dashbord"></div>
+            <div class="activity"></div>
+            <div class="kanban"></div>
+            <div class="reporting"></div>
+            <div class="parameter"></div>
+        </div>
+
+        <!-- Colonne du milieu (les 2 gros rectangles empilés) -->
+        <div class="milieu">
+            <div class="gros_retangle">
+                <div class="header"></div>
+        <div class="statistics1"></div>
+        <div class="statistics2"></div>
+        <div class="statistics3"></div>
+        <div class="a_faire"></div>
+        <div class="en_cours"></div>
+        <div class="finish"></div>
+        <div class="tache1"></div>
+        <div class="tache5"></div>
+        <div class="tache9"></div>
+        <div class="tache2"></div>
+        <div class="tache6"></div>
+        <div class="tache10"></div>
+        <div class="tache3"></div>
+        <div class="tache"></div>
+        <div class="tache11"></div>
+        <div class="tache4"></div>
+        <div class="tache8"></div>
+        <div class="tache12"></div>
+            </div>
+
+            <div class="gros_retangle2">
+               <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+        <div class="rect6"></div>
+        <div class="rect7"></div>
+        <div class="rect8"></div>
+        <div class="rect9"></div>
+        <div class="rect10"></div>
+        <div class="rect11"></div>
+        <div class="rect12"></div>
+        <div class="jambon"></div>
+        <div class="beurre"></div>
+        <div class="haut"></div>
+            </div>
+        </div>
+
+        <!-- Colonne droite -->
+        <div class="col_droite">
+            <div class="profil"></div>
+            <div class="widget1"></div>
+            <div class="widget2"></div>
+            <div class="widget3"></div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/exercice2.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="main">
+    <div class="container-nav">
+
+    </div>
+    <div class="conteneur-centre">
+        
+        <!-- Colonne gauche -->
+        <div class="col_gauche">
+            <div class="menu-top"></div>
+            <div class="dashbord"></div>
+            <div class="activity"></div>
+            <div class="kanban"></div>
+            <div class="reporting"></div>
+            <div class="parameter"></div>
+        </div>
+
+        <!-- Colonne du milieu (les 2 gros rectangles empilés) -->
+        <div class="milieu">
+            <div class="gros_retangle">
+                <div class="header"></div>
+        <div class="statistics1"></div>
+        <div class="statistics2"></div>
+        <div class="statistics3"></div>
+        <div class="a_faire"></div>
+        <div class="en_cours"></div>
+        <div class="finish"></div>
+        <div class="tache1"></div>
+        <div class="tache5"></div>
+        <div class="tache9"></div>
+        <div class="tache2"></div>
+        <div class="tache6"></div>
+        <div class="tache10"></div>
+        <div class="tache3"></div>
+        <div class="tache"></div>
+        <div class="tache11"></div>
+        <div class="tache4"></div>
+        <div class="tache8"></div>
+        <div class="tache12"></div>
+            </div>
+
+            <div class="gros_retangle2">
+               <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+        <div class="rect6"></div>
+        <div class="rect7"></div>
+        <div class="rect8"></div>
+        <div class="rect9"></div>
+        <div class="rect10"></div>
+        <div class="rect11"></div>
+        <div class="rect12"></div>
+        <div class="jambon"></div>
+        <div class="beurre"></div>
+        <div class="haut"></div>
+            </div>
+        </div>
+
+        <!-- Colonne droite -->
+        <div class="col_droite">
+            <div class="profil"></div>
+            <div class="widget1"></div>
+            <div class="widget2"></div>
+            <div class="widget3"></div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+    display: flex;
+    gap: 0.8rem;
 }
 
 .logo {
-    display: flex;
-    gap: 1rem;
-    width: 10%;
+    background-color: var(--blue-ocean);
     height: 100%;
-    background-color: blue;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
-.nav {
-    display: flex;
-    gap: 1rem;
-    width: 70%;
+nav {
+    background-color: var(--violet);
     height: 100%;
-    background-color: violet;
+    width: 70%;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    border-radius: 10px;
+}
+
+nav > p {
+    padding-left: 1rem;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem
+}
+
+nav > ul > li {
+    /* On applique la même valeur aux quatres cotés */
+    /* padding: 0.4rem; */
+
+    /* vertical | horizontal  */
+    padding: 0.4rem 0.8rem;
+
+    /* Haut | Horizontal | Bas  */
+    /* padding: 0.4rem 0.5rem 0.8rem; */
+
+    /* Haut | Droit | Bas | Gauche  */
+    /* padding: 0.4rem 0.5rem 0.8rem 0.6rem; */
+
+    border-radius: 20px;
 }
 
 .search {
-    display: flex;
-    width: 20%;
+    background-color: var(--yellow-dijon);
     height: 100%;
-    background-color: orange;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.search > button {
+    padding: 0.2rem 0.7rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.search > input[type="search"] {
+    padding: 0.5rem 0;
+    width: 30%;
+    border: none;
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+.search > input[type="search"]::placeholder {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+/* On ajoute un before pour le premier element de type <button> 
+qui se trouve dans un élément de classe search */
+.search > button:first-of-type::before {
+    content: "+ ";
+}
+
+
+
+/* MAIN */
+main{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu {
+    height: 100%;
+    width: 15%;
+}
+
+.menu > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+}
+
+.menu > ul > li {
+    width: calc(100% - 1.2rem);
+    padding: 0.8rem 0.5rem;
+    border-radius: 10px;
+}
+
+.board {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.container-board-header {
+    display: flex;
+    height: 7%;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.board-header {
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--yellow-dijon);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.board-header > p {
+    margin-left: 1rem;
+}
+
+.stat {
+    border-radius: 10px;
+    width: calc(40%/3);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tasks {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.to-do {
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.work-in-progress {
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+
+.done {
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.h10{
+    height: 10%;
+    border-radius: 10px;
+}
+
+.h20 {
+    height: 20%;
+    border-radius: 10px;
+}
+
+.h30 {
+    height: 30%;
+    border-radius: 10px;
+}
+
+.h10, .h20, .h30 {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.task-11 {
+    width: 20%;
+}
+
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    height: 25%;
+    width: 100%;
+    gap: 0.5rem
+}
+
+.numbers > div {
+    width: calc(25% - 0.4rem);
+    height: calc(100%/3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jambon-beurre {
+    margin-top: 1rem;
+    display: flex;
+    height: 18%;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.jambon, .beurre, .haut{
+    width: calc(100% / 3);
+    border-radius: 10px;
+}
+
+.jambon {
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.beurre {
+    height: 75%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    align-self: flex-end;
+}
+
+.haut {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+aside{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.profile {
+    background-color: var(--violet);
+    height: 10%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-button {
-    height: 70%;
+
+.img-profile {
+    background-color: var(--cyan);
+    height: 75%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
 }
 
-.navbar-list {
-    list-style: none;
-    margin-top: 3px;
-    margin-bottom: 5px;
-    text-decoration: none;
-    border: solid 1px #92AC86;
-    width: fit-content;
-    padding: 3px;
+.profile > button {
+    padding: 0.2rem 0.7rem;
+    border: none;
     border-radius: 5px;
-    background-color: #A7D49B;
+    font-weight: bold;
 }
 
-.col_gauche {
-    display: flex;
-    gap: 1rem;
-    width: 11%;
-    height: 100%;
-    flex-direction: column;
-    background-color: lightgrey;
-}
-
-.menu-top {
-    display: flex;
+.widget {
+    height: 7.5%;
     width: 100%;
-    height: 6%;
-    background-color: plum;
+    border-radius: 10px;
 }
 
-.dashbord {
-    display: flex;
+.widget > p {
+    padding: 0.7rem;
+}
+
+/* FOOTER */
+
+footer{
+    height: 5%;
     width: 100%;
-    height: 6%;
-    background-color: lightskyblue;
-}
-
-.activity {
+    background-color: var(--violet);
     display: flex;
-    width: 100%;
-    height: 6%;
-    background-color: lightgreen;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.kanban {
-    display: flex;
-    width: 100%;
-    height: 6%;
-    background-color: lightcoral;
+footer p:first-of-type {
+    padding-left: 1rem;
 }
 
-.reporting {
-    display: flex;
-    width: 100%;
-    height: 6%;
-    background-color: lightseagreen;
+footer p:last-of-type {
+    padding-right: 1rem;
 }
 
-.parameter {
-    display: flex;
-    width: 100%;
-    height: 6%;
-    background-color: lightpink;
-}
-
-.gros_retangle {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 75%;
-    height: 80%;
-    flex-direction: initial;
-    background-color: lightyellow;
-    margin: auto;
-    justify-content: center;
-}
-
-.header {
-    display: flex;
-    gap: 1rem;
-    width: 45%;
-    height: 6%;
-    background-color: orange;
-}
-
-.statistics1 {
-    display: flex;
-    gap: 1rem;
-    width: 15%;
-    height: 6%;
-    background-color: purple;
-}
-
-.statistics2 {
-    display: flex;
-    gap: 1rem;
-    width: 15%;
-    height: 6%;
-    background-color: green;
-}
-
-.statistics3 {
-    display: flex;
-    gap: 1rem;
-    width: 15%;
-    height: 6%;
-    background-color: blue;
-}
-
-.a_faire {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 6%;
-    background-color: grey;
-}
-
-.en_cours {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 6%;
-    background-color: brown;
-}
-
-.finish {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 6%;
-    background-color: black;
-}
-
-.tache1 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: lightblue;
-}
-
-.tache5 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: lightgreen;
-}
-
-.tache9 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: lightpink;
-}
-
-.tache2 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: lightgrey;
-}
-
-.tache6 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: rgb(224, 224, 40);
-}
-
-.tache10 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: lightcoral;
-}
-
-.tache3 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: lightseagreen;
-}
-
-.tache {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: plum;
-}
-
-.tache11 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: rgb(243, 243, 0);
-}
-
-.tache4 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: rgb(0, 255, 255);
-}
-
-.tache8 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: rgb(255, 0, 191);
-}
-
-.tache12 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: rgb(0, 110, 255);
-}
-
-
-.gros_retangle2 {
-    display: flex;
-    gap: 1rem;
-    width: 75%;
-    height: 80%;
-    background-color: rgb(141, 182, 225);
-    margin: auto;
-    justify-content: center;
-}
-
-.rect1 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: lightblue;
-}
-
-.rect2 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: lightgreen;
-}
-
-.rect3 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: lightpink;
-}
-
-.rect4 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: lightgrey;
-}
-
-.rect5 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: rgb(224, 224, 40);
-}
-
-.rect6 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: lightcoral;
-}
-
-.rect7 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: lightseagreen;
-}
-
-.rect8 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: plum;
-}
-
-.rect9 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: rgb(243, 243, 0);
-}
-
-.rect10 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: rgb(0, 255, 255);
-}
-
-.rect11 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: rgb(255, 0, 191);
-}
-
-.rect12 {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 9%;
-    background-color: rgb(0, 110, 255);
-}
-
-.jambon {
-    display: flex;
-    gap: 1rem;
-    width: 30%;
-    height: 6%;
-    background-color: lightgrey;
-}
-
-.beurre {
-    display: flex;
-    gap: 1rem;
-    width: 40%;
-    height: 6%;
-    background-color: rgb(179, 43, 43);
-}
-
-.haut {
-    display: flex;
-    gap: 1rem;
-    width: 40%;
-    height: 6%;
-    background-color: rgb(241, 238, 15);
-}
-
-
-.col_droite {
-    display: flex;
-    gap: 1rem;
-    width: 11%;
-    height: 100%;
-    flex-direction: column;
-    background-color: lightgrey;
-}
-
-.profil {
-    display: flex;
-    gap: 1rem;
-    width: 100%;
-    height: 6%;
-    background-color: rgb(4, 92, 121);
-}
-
-.widget1 {
-    display: flex;
-    gap: 1rem;
-    width: 100%;
-    height: 6%;
-    background-color: lightgreen;
-}
-
-.widget2 {
-    display: flex;
-    gap: 1rem;
-    width: 100%;
-    height: 6%;
-    background-color: lightcoral;
-}
-
-.widget3 {
-    display: flex;
-    gap: 1rem;
-    width: 100%;
-    height: 6%;
-    background-color: lightseagreen;
-}
-
-.conteneur-centre {
-    display: flex;
-    gap: 1rem;
-    width: 100%;
-    height: 100%;
-}
-
-.milieu {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 64%;
-    height: 100%;
-}
