@@ -1,0 +1,24 @@
+:root {
+      --bg: #f4f1ea;
+      --primary: #8bc34a;
+      --accent: #795548;
+      --text: #333;
+    }
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.fixed-element {
+    background-color: #f4f1ea;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    height: 80px;
+}
+

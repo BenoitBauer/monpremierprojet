@@ -1,0 +1,65 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.flex-overflow {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.overflow {
+    overflow: hidden;
+    border-radius: 15px;
+    width: 90%;
+    height: 30;
+    aspect-ratio: 1/2;
+    position: relative;
+}
+
+.button1 {
+    position: absolute;
+    top: 330px;
+    right: 680px;
+    background-color: rgb(20, 157, 220);
+    color: white;
+    padding: 0.3rem;
+    border-radius: 0.9px;
+    font-size: 0.8rem;
+}
+
+.container-relative img { 
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transform: translate(70%, 20%);
+} 
+
+.container {
+    background-color: beige;
+    border-radius: 20px;
+    width: 30%;
+    height: 40%;
+}
+
+.title-product {
+    font-family: "Arial"; sans-serif;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 10;
+    transform: translate(70%, 180%);
+    top: 10%;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+}
