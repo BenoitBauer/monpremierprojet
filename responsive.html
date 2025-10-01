@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Responsive Design</h1>
+
+    <h2>Qu'est-ce que le responsive design ?</h2>
+
+    <p>Le <b>responsive design</b> ou en français design adaptatif est une approche de conception web qui permet à un site de <b>s'adapter automatiquement à la taille de l'écran</b></p>
+
+    <h2>Les breakpoint</h2>
+    <p>Un breakpoint est un seuil de <b>largeur</b> d'écran à partir duquel on modifie l'apparence de la page afin de l'adapter au support ( mobile, tablette, desktop)</p>
+
+    <h3>Liste de breakpoint</h3>
+    <ul>
+        <li>Mobile => max-width: 480px</li>
+        <li>Tablette => max-width: 768px</li>
+        <li>Laptop (ordi portable) => max-width: 1024px</li>
+        <li>Desktop (les tours) => min-width 1025px</li>
+    </ul>
+
+    <h3 class="warning">
+        Attention !!!
+    </h3>
+
+    <p> La résolution des écrans en css est representer en pixel <b>logique</b></p>
+    <p>Dans la réaliter les appareils sont en pixel physique</p>
+    <p>Par exemple un Iphone 13 à une résolution logique de 390 x 844 pixels mais en réaliter elle a une resolution physique de 2532 x 1170</p>
+    <p>Par exemple pour un écran retiba 3 pixels physiques pour 1 pixel logique</p>
+
+    <h2>Principes fondamentaux du responsive design</h2>
+    <p>Utilisation des <b>%</b> ou <b>vh/vw</b> au lieux de valeurs fixe comme le pixel (px)</p>
+    <p>Utiliser des propriétés tel que <i>max-width: 100%</i> pour que les image ne dépasse jamais leurs conteneurs</p>
+    <p>Les medi queries => Ce sont des instructions qui applique des styles en fonction de la taille de l'écran</p>
+
+    <p>Actuellement nous vivont dans un monde où les téléphones portable sont omnisprésents, il est conseillé MAINTENANT de concevoir sont site en MOBIL FIRST</p>
+    <p>Le MOBIL FIRST est un concept de web design optimisé pour le mobile, il consiste à concevoir un site en mettant <b>la priorité sur la version mobile</b> et ensuite d'adapté le site progressivement sur des écrans plus larges</p>
+    <h2>Les flexbox</h2>
+    <p>L'utilisatipon du wrap est maintenant très important</p>
+
+    <div class="container">
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box green"></div>
+    </div>
+
+    <hr>
+    <div class="container">
+        <div class="box blue order1"></div>
+        <div class="box orange order2"></div>
+        <div class="box green order3"></div>
+    </div>
+
+</body>
+</html>

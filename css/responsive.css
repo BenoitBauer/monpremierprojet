@@ -1,0 +1,99 @@
+:root {
+    --box-gap: 1rem
+}
+
+
+.warning {
+    color: red;
+    font-style: italic;
+}
+
+body {
+    background-color: bisque;
+    min-height: 100vh;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}
+
+.box {
+    width: 20%;
+    aspect-ratio: 1/1;
+}
+.container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    margin: 3rem 0;
+    gap: var(--box-gap)
+}
+
+.order1 {
+    order: 1;
+}
+
+.order2 {
+    order: 2;
+}
+
+.order3 {
+    order: 3;
+}
+
+.order4{
+order: 4;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-color: beige;
+    }
+
+    body p {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .box {
+    width: calc(50% - var(--box-gap))
+
+    }
+
+    .order1 {
+    order: 1;
+}
+
+.order2 {
+    order: 3;
+}
+
+.order3 {
+    order: 2;
+}
+
+.order4{
+order: 4;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+    width: 100%;
+    }
+}
