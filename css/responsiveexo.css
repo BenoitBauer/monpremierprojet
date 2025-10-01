@@ -168,3 +168,56 @@ footer {
     margin: 0;
     font-size: 0.9rem;
   }
+
+  /*  RESPONSIVE           */
+
+/* Tablette (max 768px) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    max-width: 100%;
+  }
+
+  .cards-section {
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .formulaire input {
+    flex: 1 1 100%;
+  }
+
+  .formulaire button {
+    width: 100%;
+  }
+}
+
+/* Mobile (max 480px) */
+@media (max-width: 480px) {
+  .hero h3 {
+    font-size: 1.8rem;
+  }
+
+  .hero button {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
