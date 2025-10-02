@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+
+.topbar {
+  background: #1f1f1f;
+}
+
+.nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 1rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1rem;
+}
+
+
+.menu {
+  width: 100%;
+  background: #eee;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.menu-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.menu-button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  background: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  background: #ccc;
+}
+
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+.card-text {
+  padding: 0 10px 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+
+.widget {
+  width: 15%;
+  background: #eee;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.widget-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+
+
+@media (min-width: 480px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    width: 45%;
+}
+}
+
+
+@media (min-width: 768px) {
+  .page {
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  .menu {
+    width: 220px;
+    flex-shrink: 0;
+  }
+  .cards {
+    flex: 1;
+  }
+  .card {
+    width: 250px;
+    }
+
+  .widget {
+    width: 260px;
+    flex-shrink: 0;
+  }
+}
