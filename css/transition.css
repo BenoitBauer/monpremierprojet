@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.logo-no-transition .logo {
+    background-image: url("../img/autruchelogo.png");
+    width: 200px;
+    height: 336px;
+    border-radius: 10px;
+}
+
+.logo-no-transition .logo:hover{
+    transform: scale(1.05);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-no-transition {
+    border: 1px solid saddlebrown;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.logo-no-transition h3{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.logo-transition {
+    border: 1px solid saddlebrown;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.logo-transition h3{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.logo-transition .logo {
+    background-image: url("../img/autruchelogo.png");
+    width: 200px;
+    height: 336px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.logo-transition .logo:hover{
+    transform: scale(1.05);
+}
+
+.saw {
+    width: 150px;
+    aspect-ratio: 1/1;
+    transition: transform 5s ease-in-out;
+}
+
+.saw:hover{
+    transform: rotate(3600deg);
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+td, th {
+    padding: 1rem;
+}
+
+tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.saw-container {
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+.saw-animation {
+    width: 150px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(0deg);
+    animation-name: saw-move;
+    /* Temps que dure l'animation */
+    animation-duration: 5s;
+    /* La courbe de vitesse de l'anim */
+    animation-timing-function: cubic-bezier(.32,.35,1,-0.09);
+    /* Le nombre de fois que l'anim est jouer */
+    animation-iteration-count: infinite;
+    /* Est-ce que cette animation s'inverse à la fin ou pas ? */
+    animation-direction: alternate;
+}
+
+@keyframes saw-move {
+    50% {
+        bottom: calc(100% - 150px);
+        left: 0;
+    }
+    100% {
+        bottom: calc(100% - 150px);
+        left: calc(100% - 150px);
+        transform: rotate(7200deg);
+    }
+}
+
+.ostrich-container {
+    width: 100%;
+    position: relative;
+    height: 200px;
+}
+
+.ostrich {
+    width: 20%;
+    position: absolute;
+    animation-name: ostrich-run;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+}
+
+@keyframes ostrich-run {
+    0% {
+        left: -20%;
+        transform: scale(1, 1);
+    }
+    49% {
+        left: 100%;
+         transform: scale(1, 1);
+    }
+    51% {
+        left: 100%;
+         transform: scale(-1, 1);
+    }
+    100% {
+        left: -20%;
+        transform: scale(-1, 1);
+    }
+}
+
+.ostrich img {
+    width: 100%;
+}
